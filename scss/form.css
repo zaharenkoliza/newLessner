@@ -1,5 +1,22 @@
 .form-window {
-  width: 479px;
+  width: 411px;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  background: white;
+  border-radius: 32px 0px 0px 32px;
+  right: -35%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+  padding: 0 32px;
+  transition: right 0.5s ease-in-out;
+}
+.form-window form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .form-window .form-input-line {
   background-color: #FBF0EA;
@@ -36,4 +53,46 @@
 .form-window .form-input-checkbox input:checked + label:before {
   content: url("../img/form-checkbox.svg");
   background: #ef9166;
+}
+
+.overlay-background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(64, 69, 79, 0.5);
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.form-overlay-close {
+  position: absolute;
+  top: 32px;
+  right: -500px;
+}
+
+._active-overlay-close {
+  right: 503px;
+  transition: right 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+._active-overlay-background {
+  display: block;
+  animation: 0.5s anim linear;
+  overflow: hidden;
+}
+
+._active {
+  right: 0;
+  overflow: hidden;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=form.css.map */

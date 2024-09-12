@@ -23,6 +23,7 @@ html > body
 {
 	margin: 0;
 	color: $mainColor;
+	overflow-x: hidden;
 
 	font-family: "Circe";
 	font-weight: 400;
@@ -233,6 +234,7 @@ h4
 {
 	padding: 1rem 40px;
 	border: none;
+	width: max-content;
 
 	font-size: 16px;
 	line-height: 16px;

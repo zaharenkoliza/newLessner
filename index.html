@@ -150,30 +150,36 @@
 	</section>
 </footer>
 
-</body>
+<section>
+	<div class="overlay-background"></div>
+	<img class="form-overlay-close" src="img/close.svg" alt="">
+	<div class="form-window">
+		<h2>заказать 
+			<span class="accent">звонок</span>
+		</h2>
+		<p class="lead">
+			Персональный менеджер ответит на&nbsp;все вопросы и&nbsp;подготовит для вас индивидуальное предложение.
+		</p>
+		<form action="" method="get">
+			<input class="form-input-line" type="text" name="name" id="name" value="Имя" required>
+			<input class="form-input-line" type="text" name="phone" id="phone" value="Телефон" required>
+			<div class="form-input-checkbox">
+				<input type="checkbox" id="scales" name="scales" checked />
 
-<section class="form-window">
-	<h2>заказать 
-		<span class="accent">звонок</span>
-	</h2>
-	<p class="lead">
-		Персональный менеджер ответит на&nbsp;все вопросы и&nbsp;подготовит для вас индивидуальное предложение.
-	</p>
-	<form action="" method="get">
-		<input class="form-input-line" type="text" name="name" id="name" value="Имя" required>
-		<input class="form-input-line" type="text" name="phone" id="phone" value="Телефон" required>
-		<div class="form-input-checkbox">
-			<input type="checkbox" id="scales" name="scales" checked />
-
-			<label for="scales">Согласие на обработку 
-				<span class="accent">персональных данных</span>
-			</label>
-		</div>
+				<label for="scales">Согласие на обработку 
+					<span class="accent">персональных данных</span>
+				</label>
+			</div>
+		</form>
 		<button class="_button accent-button" type="submit">
 			<span>Отправить</span>
 			<img src="img/button_white.svg" alt="">
 		</button>
-	</form>
+	</div>
 </section>
+
+</body>
+
+<script src="js/script.js"></script>
 
 </html>
