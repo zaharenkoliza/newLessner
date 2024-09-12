@@ -1,4 +1,13 @@
 @import "../css/circe.css";
+p, ul, h1, h2, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 html > body {
   margin: 0;
   color: #40454f;
@@ -6,65 +15,97 @@ html > body {
   font-weight: 400;
 }
 
-.burger {
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-}
-
-.burger span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin: 5px 0;
-  background: #333;
-  border-radius: 5px;
-}
-
-.burger span:nth-child(1) {
-  margin-top: 16px;
-}
-.burger span:nth-child(3) {
-  margin-bottom: 16px;
-}
-
 html > body header {
   margin: 0 auto 0 auto;
   max-width: 1368px;
+  max-height: 82px;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
   margin-bottom: 80px;
 }
-html > body header div {
+html > body header .header-left, html > body header .header-right {
   display: flex;
+  align-items: center;
 }
-html > body header div:nth-child(1) {
-  margin: 14px 0 14px 0;
+html > body header .header-left {
+  margin: 14px 0;
 }
-html > body header div:nth-child(2) {
-  margin: 8px 0 8px 0;
+html > body header .header-right {
+  margin: 8px 0;
+}
+html > body header .header-right .gray-button {
+  background-color: #40454f;
+  color: #FFFFFF;
+  margin-left: 2vw;
+}
+html > body header .header-contacts {
+  margin-left: 1.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html > body header .header-contacts .header-p-regular {
+  color: #066381;
+  font-size: 14px;
+  cursor: pointer;
 }
 html > body footer {
   background-color: #40454f;
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
-  height: 330px;
+  height: 173px;
+  padding: 80px 0 68px 0;
 }
 html > body footer section {
   max-width: 1368px;
   margin: 0 auto 0 auto;
-  padding: 80px 0 68px 0;
   display: flex;
+  height: 100%;
+}
+html > body footer section .footer-info {
+  width: 50%;
+}
+html > body footer section .footer-contacts, html > body footer section .footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html > body footer section .footer-social {
+  display: flex;
+  gap: 34px;
+}
+html > body footer section .footer-contacts {
+  width: 24%;
+  margin-left: 17%;
 }
 html > body footer section .regular {
   color: #FFFFFF;
+  margin-bottom: 13px;
 }
-html > body footer section .light_2 {
+html > body footer section .regular a:hover {
+  color: #B3B5B9;
+}
+html > body footer section .footer-legal .footer-legal-light {
+  margin-bottom: 24px;
+}
+html > body footer section .footer-legal-light {
   color: #CFD0D3;
   font-size: 16px;
+  font-weight: 350;
+  line-height: 16px;
 }
-html > body footer section .footer-right-div {
-  width: 50%;
+html > body footer section .footer-legal-light a:hover {
+  color: #FFFFFF;
+}
+html > body footer section .footer-social a {
+  display: flex;
+}
+html > body footer section .footer-social a:hover circle {
+  fill: #FFFFFF;
+}
+html > body footer section .footer-social a:hover path {
+  fill: #40454f;
 }
 html > body main {
   max-width: 1368px;
@@ -75,25 +116,31 @@ html > body main section {
   justify-content: space-between;
   margin-bottom: 88px;
 }
-html > body main section .main-text-block > div {
-  margin-bottom: 48px;
+html > body main section .main-block, html > body main section .main-block-text {
+  display: flex;
+  flex-direction: column;
+}
+html > body main section .main-block {
+  gap: 48px;
+}
+html > body main section .main-block-text {
+  gap: 32px;
+}
+html > body main section .main-p-regular {
+  font-size: 14px;
+}
+html > body main section .main-p-regular span {
+  color: #B3B5B9;
 }
 html > body main section:nth-child(1) {
   display: block;
-}
-html > body main img {
-  translate: 36px;
 }
 
 html > body > header > div > nav ul {
   display: flex;
 }
 html > body > header > div > nav ul li {
-  list-style-type: none;
   margin-right: 16px;
-}
-html > body > header > div > nav ul li a {
-  font-size: 20px;
 }
 html > body > header > div > nav ul li:hover {
   color: #066381;
@@ -129,11 +176,36 @@ h4 {
   line-height: 32px;
 }
 
-button {
-  padding: 12px 40px 12px 40px;
+._button {
+  padding: 1rem 40px;
+  border: none;
   font-size: 16px;
+  line-height: 16px;
   border-radius: 26px;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  max-height: 48px;
+}
+._button img {
+  margin-left: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+._button span {
+  margin-top: 0.2rem;
+}
+
+._button:hover img {
+  transform: rotate(45deg);
+}
+
+.accent-button {
+  background-color: #ef9166;
+  color: #FFFFFF;
+}
+
+._button.button-arrow {
+  padding: 8px 40px;
 }
 
 .factoids {

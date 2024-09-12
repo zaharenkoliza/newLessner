@@ -1,0 +1,39 @@
+.form-window {
+  width: 479px;
+}
+.form-window .form-input-line {
+  background-color: #FBF0EA;
+  width: 411px;
+  height: 48px;
+  border: 1px solid #FBF0EA;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #8C8F95;
+  line-height: 20.8px;
+  padding-left: 24px;
+}
+.form-window .form-input-checkbox input {
+  display: none;
+}
+.form-window .form-input-checkbox label {
+  vertical-align: middle;
+}
+.form-window .form-input-checkbox label:before {
+  content: " ";
+  display: inline-block;
+  margin-right: 11px;
+  position: relative;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: #FBF0EA;
+  border: 1px solid #ef9166;
+  -o-border-image: initial;
+     border-image: initial;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.form-window .form-input-checkbox input:checked + label:before {
+  content: url("../img/form-checkbox.svg");
+  background: #ef9166;
+}/*# sourceMappingURL=form.css.map */

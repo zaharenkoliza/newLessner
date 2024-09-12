@@ -6,18 +6,18 @@
     <meta charset="utf-8" /> 
     <title>M18</title>
     <link rel=stylesheet href="scss/style.css">
+	<link rel=stylesheet href="scss/burger.css">
+	<link rel=stylesheet href="scss/form.css">
 </head>
 
 <body>
    
 <header>
-	<div>
+	<div class="header-left">
 		<img src="img/header-logo.svg" alt="">
-		<div class="burger">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
+		<div class="hamburger-menu">
+            <div class="hamburger"></div>
+        </div>
 
 		<nav>
 			<ul>
@@ -28,38 +28,48 @@
 			</ul>
 		</nav>
 	</div>
-	<div>
+	<div class="header-right">
 		<img src="img/enter.svg" alt="">
-		<div>
-			<span>812 561-03-75</span>
-			<span>заказать звонок</span>
+		<div class="header-contacts">
+			<p>812&nbsp;561-03-75</p>
+			<p class="header-p-regular">заказать&nbsp;звонок</p>
 		</div>
-		<button>выбрать квартиру</button>
+		<a href="#" class="_button button-arrow gray-button">
+			<span>выбрать&nbsp;квартиру</span>
+			<img src="img/button_white.svg" alt="">
+		</a>
 	</div>
 </header>
 
 <main>
 	<section>
-		<span>главная / о проекте</span>
+		<p class="main-p-regular">главная / 
+			<span>о проекте</span>
+		</p>
 		<h1>о&nbsp;проекте</h1>
 	</section>
 
 	<section>
-		<div class="main-text-block">
-			<h2>строим проекты,<br>которым <span class="accent">нет равных</span></h2>
-			<div>
+		<div class="main-block">
+			<h2>строим проекты,<br>которым 
+				<span class="accent">нет равных</span>
+			</h2>
+			<div class="main-block-text">
 				<p class="lead">
-								Компания &laquo;Отделстрой&raquo; работает в&nbsp;сфере строительства в&nbsp;Санкт-Петербурге и&nbsp;области с&nbsp;1994&nbsp;года.
+					Компания &laquo;Отделстрой&raquo; работает в&nbsp;сфере строительства в&nbsp;Санкт-Петербурге и&nbsp;области с&nbsp;1994&nbsp;года.
 				</p>
 				<p class="regular">
-								Мы&nbsp;счастливы предлагать людям и&nbsp;обществу комфортные условия для жизни. В&nbsp;нашем портфеле&nbsp;&mdash; более миллиона квадратных метров жилья и&nbsp;объектов социальной инфраструктуры. Нашими клиентам стали более 15&nbsp;тысяч семей, которые получили квартиры в&nbsp;срок, либо досрочно.
+					Мы&nbsp;счастливы предлагать людям и&nbsp;обществу комфортные условия для жизни. В&nbsp;нашем портфеле&nbsp;&mdash; более миллиона квадратных метров жилья и&nbsp;объектов социальной инфраструктуры. Нашими клиентам стали более 15&nbsp;тысяч семей, которые получили квартиры в&nbsp;срок, либо досрочно.
 				</p>
 			</div>
 			<div>
-				<button>выбрать квартиру</button>
-				<button>найти ближайший офис
-					<img src="img/button_default_mainColor.svg" alt="">
-				</button>
+				<a href="#" class="_button accent-button">
+					<span>выбрать квартиру</span>
+				</a>
+				<a href="#" class="_button">
+					<span>найти ближайший офис</span>
+					<img src="img/button_mainColor.svg" alt="">
+				</a>
 			</div>
 		</div>
 		<div>
@@ -85,30 +95,85 @@
 
 <footer>
 	<section>
-		<div class="footer-right-div">
-			<div class="footer-right-div__">
-				<p class="light_2">
+		<div class="footer-info">
+			<div class="footer-legal">
+				<p class="footer-legal-light">
 					Вся информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является публичной офертой, согласно статье 437&nbsp;ГК РФ. Использование материалов с&nbsp;сайта newlessner.&nbsp;ru&nbsp;не&nbsp;допускается без письменного разрешения ООО &laquo;Специализированный застройщик &laquo;Отделстрой&raquo;
 				</p>
-				<p class="light_2">
+				<p class="footer-legal-light">
 					&copy;&nbsp;ООО &laquo;Специализированный застройщик &laquo;Отделстрой&raquo; 2023
 				</p>
 			</div>
-				<p class="light_2">
+				<p class="footer-legal-light">
 					Создание сайта — <a href="https://m18.ru/">М18</a>
 				</p>
 		</div>
-		<div>
-			<p class="regular">
-				Санкт-Петербург, Светлановский&nbsp;пр., д.&nbsp;115, корп.&nbsp;1
-			</p>
-			<p class="regular">
-				(812) 561-27-36
-			</p>
+		<div class="footer-contacts"> 
+			<div>
+				<p class="regular">
+					<a target="_blank" href="https://yandex.ru/maps/-/CDDeVDLK">
+						Санкт-Петербург, Светлановский&nbsp;пр., д.&nbsp;115, корп.&nbsp;1
+					</a>
+				</p>
+				<p class="regular">
+					<a href="#">(812) 561-27-36</a>
+				</p>
+			</div>
+			<div class="footer-social">
+				<a href="#">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="16" cy="16" r="16" fill="none"/>
+						<path d="M12.0631 17.9651L11.7653 22.1866C12.1913 22.1866 12.3758 22.0021 12.5971 21.7807L14.5944 19.8566L18.733 22.9116C19.492 23.3379 20.0267 23.1135 20.2315 22.2078L22.948 9.37698L22.9488 9.37622C23.1896 8.24525 22.543 7.80299 21.8035 8.08044L5.83566 14.2426C4.74588 14.669 4.76238 15.2813 5.6504 15.5588L9.73274 16.8386L19.2152 10.858C19.6615 10.5601 20.0672 10.7249 19.7335 11.0228L12.0631 17.9651Z" fill="white"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="16" cy="16" r="16" fill="none"/>
+						<path d="M31.0002 16.1652V15.8346C24.3583 15.6334 21.3208 15.4677 18.8983 13.1015C16.5327 10.6796 16.3664 7.64274 16.1658 1.00024H15.8346C15.6339 7.64274 15.4677 10.6796 13.1021 13.1015C10.6796 15.4684 7.64206 15.6334 1.00018 15.8346V16.1652C7.64206 16.3665 10.6796 16.5321 13.1021 18.8977C15.4677 21.3202 15.6339 24.3577 15.8346 31.0002H16.1658C16.3658 24.3577 16.5327 21.3202 18.8983 18.8977C21.3208 16.5321 24.3583 16.3665 31.0002 16.1652Z" fill="white"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="16" cy="16" r="16" fill="none"/>
+						<path d="M16.4867 16.3409C13.7963 16.3409 11.5607 13.9948 11.5607 11.2186C11.5607 8.34618 13.7963 6 16.4879 6C19.27 6 21.4139 8.34618 21.4139 11.2186C21.4118 11.8948 21.2825 12.564 21.0336 13.1877C20.7847 13.8114 20.421 14.3774 19.9634 14.8532C19.5058 15.3291 18.9632 15.7054 18.3668 15.9607C17.7704 16.216 17.1307 16.3452 16.4867 16.3409ZM16.4867 9.01616C15.3475 9.01616 14.4808 10.0211 14.4808 11.2186C14.4808 12.4148 15.3475 13.3248 16.4879 13.3248C17.6736 13.3248 18.495 12.4148 18.495 11.2186C18.495 10.0211 17.6724 9.01616 16.4867 9.01616ZM18.4486 20.602L21.2318 23.427C21.7794 24.0482 21.7794 24.9582 21.2318 25.5331C20.639 26.1556 19.7259 26.1556 19.27 25.5331L16.4879 22.6595L13.7963 25.5331C13.5225 25.8206 13.1571 25.9631 12.7464 25.9631C12.4273 25.9631 12.063 25.8194 11.7428 25.5331C11.1952 24.9582 11.1952 24.0482 11.7428 23.4257L14.5713 20.6008C13.5497 20.283 12.5697 19.8333 11.6535 19.2621C10.969 18.8796 10.8321 17.9221 11.1964 17.2034C11.6535 16.4859 12.4737 16.2947 13.2047 16.7734C14.1938 17.4074 15.3302 17.7429 16.4891 17.7429C17.648 17.7429 18.7844 17.4074 19.7735 16.7734C20.5033 16.2947 21.3699 16.4859 21.7806 17.2034C22.1913 17.9221 22.0092 18.8783 21.3699 19.2621C20.5033 19.8371 19.4997 20.2683 18.4498 20.6033L18.4486 20.602Z" fill="white"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="16" cy="16" r="16" fill="none"/>
+						<path d="M16.4326 22.8528C16.4326 22.8406 16.4224 22.8307 16.4102 22.8306C10.1793 22.8205 6.31574 18.5791 6.01539 11.5104C6.00352 11.231 6.22942 11 6.50909 11H8.74847C9.0214 11 9.24307 11.2191 9.25525 11.4917C9.45788 16.0253 11.3886 18.2542 13.1171 19.0162C13.4159 19.1479 13.7243 18.91 13.7243 18.5835V11.5C13.7243 11.2239 13.9481 11 14.2243 11H16.3316C16.6077 11 16.8316 11.2239 16.8316 11.5V15.1052C16.8316 15.4054 17.0961 15.6391 17.3817 15.5468C18.9285 15.0473 20.442 13.299 21.1132 11.3585C21.1861 11.148 21.3803 11 21.6031 11H23.6983C24.0077 11 24.2437 11.2789 24.1688 11.5791C23.6329 13.7254 22.238 15.4029 20.9995 16.3885C20.6897 16.6349 20.714 17.1528 21.0455 17.3691C22.3513 18.221 23.9555 19.793 24.8053 22.2479C24.9133 22.56 24.6737 22.875 24.3434 22.875H21.9933C21.7747 22.875 21.5831 22.7322 21.5075 22.5271C20.799 20.6052 19.3339 19.1251 17.3753 18.73C17.0863 18.6717 16.8316 18.9046 16.8316 19.1994V22.6755C16.8316 22.7857 16.7423 22.875 16.6321 22.875H16.4548C16.4425 22.875 16.4326 22.8651 16.4326 22.8528Z" fill="white"/>
+					</svg>
+				</a>
+				</ul>
+			</div>
 		</div>
 	</section>
 </footer>
 
 </body>
+
+<section class="form-window">
+	<h2>заказать 
+		<span class="accent">звонок</span>
+	</h2>
+	<p class="lead">
+		Персональный менеджер ответит на&nbsp;все вопросы и&nbsp;подготовит для вас индивидуальное предложение.
+	</p>
+	<form action="" method="get">
+		<input class="form-input-line" type="text" name="name" id="name" value="Имя" required>
+		<input class="form-input-line" type="text" name="phone" id="phone" value="Телефон" required>
+		<div class="form-input-checkbox">
+			<input type="checkbox" id="scales" name="scales" checked />
+
+			<label for="scales">Согласие на обработку 
+				<span class="accent">персональных данных</span>
+			</label>
+		</div>
+		<button class="_button accent-button" type="submit">
+			<span>Отправить</span>
+			<img src="img/button_white.svg" alt="">
+		</button>
+	</form>
+</section>
 
 </html>

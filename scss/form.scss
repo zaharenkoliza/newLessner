@@ -1,0 +1,42 @@
+$facadeColor: #FBF0EA;
+$dark-60: #8C8F95;
+$accentColor: #ef9166;
+.form-window{
+	width: 479px;
+	.form-input-line{
+		background-color: $facadeColor;
+		width: 411px;
+		height: 48px;
+		border: 1px solid $facadeColor;border-radius: 12px;
+		font-size: 16px;
+		color: $dark-60;
+		line-height: 20.8px;
+		padding-left: 24px;
+	}
+	.form-input-checkbox{
+		input{
+			display: none;
+		}
+		label {
+			vertical-align: middle;
+		}
+		label:before{
+			content: " ";
+			display: inline-block;
+			margin-right: 11px;
+			position: relative;
+			text-align: center;
+			width: 20px;
+			height: 20px;
+			background: $facadeColor;
+			border: 1px solid $accentColor;
+			border-image: initial;
+			vertical-align: middle;
+			border-radius: 5px;
+		}
+		input:checked + label:before {
+			content: url('../img/form-checkbox.svg');
+			background: $accentColor;
+		}
+	}
+}

@@ -6,7 +6,18 @@ $dark-25: #CFD0D3;
 $dark-90: #535861;
 $dark-80: #646870;
 $dark-60: #8C8F95;
+$dark-40: #B3B5B9;
+$facadeColor: #FBF0EA;
 @import "../css/circe.css";
+
+p, ul, h1, h2, h4{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
 
 html > body
 {
@@ -17,84 +28,112 @@ html > body
 	font-weight: 400;
 }
 
-.burger
-{
-	width: 48px;
-	height: 48px;
-
-	cursor: pointer;
-}
-
-.burger span
-{
-	display: block;
-
-	width: 100%;
-	height: 2px;
-	margin: 5px 0;
-	background: #333;
-
-	border-radius: 5px;
-}
-
-.burger
-{
-	span:nth-child(1)
-	{
-		margin-top: 16px;
-	}
-
-	span:nth-child(3)
-	{
-		margin-bottom: 16px;
-	}
-}
-
 html > body
 {
 	header
 	{
 		margin: 0 auto 0 auto;
 		max-width: 1368px;
+		max-height: 82px;
 		display: flex;
 		justify-content: space-between;
+		font-size: 20px;
 
 		margin-bottom: 80px;
 
-		div
+		.header-left, .header-right
 		{
 			display: flex;
+			align-items: center;
 		}
 
-		div:nth-child(1)
-		{
-			margin: 14px 0 14px 0;
+		.header-left{
+			margin: 14px 0;
 		}
 
-		div:nth-child(2)
-		{
-			margin: 8px 0 8px 0;
+		.header-right{
+			margin: 8px 0;
+			.gray-button{
+				background-color: $mainColor;
+				color: $white;
+				margin-left: 2vw;
+			}
 		}
+
+		.header-contacts{
+			margin-left: 1.3vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.header-p-regular{
+				color: $waterColor;
+				font-size: 14px;
+				cursor: pointer;
+			}
+		}
+		
 	}
 	footer{
 		background-color: $mainColor;
 		border-top-left-radius: 48px;
 		border-top-right-radius: 48px;
-		height: 330px;
+		height: 173px;
+		padding: 80px 0 68px 0;
 		section{
 			max-width: 1368px;
 			margin: 0 auto 0 auto;
-			padding: 80px 0 68px 0;
+			
 			display: flex;
+			height: 100%;
+			.footer-info{
+				width: 50%;
+			}
+			.footer-contacts, .footer-info{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.footer-social{
+				display: flex;
+				gap: 34px;
+			}
+			.footer-contacts{
+				width: 24%;
+				margin-left: 17%;
+			}
 			.regular{
 				color: $white;
+				margin-bottom: 13px;
+				a:hover{
+					color: $dark-40;
+				}
 			}
-			.light_2{
+			.footer-legal{
+				.footer-legal-light{
+					margin-bottom: 24px;
+				}
+			}
+			.footer-legal-light{
 				color: $dark-25;
 				font-size: 16px;
+				font-weight: 350;
+				line-height: 16px;
+				a:hover{
+					color: $white;
+				}
 			}
-			.footer-right-div {
-				width: 50%;
+			.footer-social {
+				a{
+					display: flex;
+				}
+				a:hover{
+					circle{
+						fill: $white;
+					}
+					path{
+						fill: $mainColor;
+					}
+				}
 			}
 		}
 	}
@@ -106,20 +145,35 @@ html > body
 		{
 			display: flex;
 			justify-content: space-between;
-
 			margin-bottom: 88px;
-			.main-text-block > div{
-				margin-bottom: 48px;
+			.main-block, .main-block-text{
+				display: flex;
+				flex-direction: column;
 			}
+			.main-block{
+				gap: 48px;
+			}
+			.main-block-text{
+				gap: 32px;
+			}
+			.main-p-regular{
+				font-size: 14px;
+				span{
+					color: #B3B5B9;
+				}
+			}
+			// .main-text-block > div{
+			// 	margin-bottom: 48px;
+			// }
 		}
 		section:nth-child(1){
 			display: block;
 		}
 
-		img
-		{
-			translate: 36px;
-		}
+		// img
+		// {
+		// 	translate: 36px;
+		// }
 	}
 }
 
@@ -131,13 +185,7 @@ html > body > header > div > nav
 
 		li
 		{
-			list-style-type: none;
 			margin-right: 16px;
-
-			a
-			{
-				font-size: 20px;
-			}
 		}
 
 		li:hover
@@ -181,13 +229,40 @@ h4
 	line-height: 32px;
 }
 
-button
+._button
 {
-	padding: 12px 40px 12px 40px;
+	padding: 1rem 40px;
+	border: none;
 
 	font-size: 16px;
+	line-height: 16px;
 	border-radius: 26px;
 	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	max-height: 48px;
+	img{
+		margin-left: 16px;
+		transition: transform 0.2s ease-in-out;
+	}
+	span{
+		margin-top: 0.2rem;
+	}
+}
+
+._button:hover{
+	img{
+		transform: rotate(45deg);
+	}
+}
+
+.accent-button{
+	background-color: $accentColor;
+	color:$white;
+}
+
+._button.button-arrow{
+	padding: 8px 40px;
 }
 
 .factoids
@@ -228,3 +303,4 @@ a.active-button{
 	color: $dark-60;
 	pointer-events: none;
 }
+
