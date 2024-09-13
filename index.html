@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8" /> 
     <title>M18</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href="scss/style.css">
 	<link rel=stylesheet href="scss/burger.css">
 	<link rel=stylesheet href="scss/form.css">
@@ -54,11 +55,12 @@
 			<h2>строим проекты,<br>которым 
 				<span class="accent">нет равных</span>
 			</h2>
+			<img class="main-block-img hidden" src="img/main_mobile.jpg" alt="interior photo">
 			<div class="main-block-text">
 				<p class="lead">
 					Компания &laquo;Отделстрой&raquo; работает в&nbsp;сфере строительства в&nbsp;Санкт-Петербурге и&nbsp;области с&nbsp;1994&nbsp;года.
 				</p>
-				<p class="regular">
+				<p class="main-block-p-light">
 					Мы&nbsp;счастливы предлагать людям и&nbsp;обществу комфортные условия для жизни. В&nbsp;нашем портфеле&nbsp;&mdash; более миллиона квадратных метров жилья и&nbsp;объектов социальной инфраструктуры. Нашими клиентам стали более 15&nbsp;тысяч семей, которые получили квартиры в&nbsp;срок, либо досрочно.
 				</p>
 			</div>
@@ -73,7 +75,7 @@
 			</div>
 		</div>
 		<div>
-			<img src="img/main_with_layers.png" alt="">
+			<img class='interior-photo' src="img/main_with_layers.png" alt="interior photo">
 		</div>
 	</section>
 
@@ -161,8 +163,8 @@
 			Персональный менеджер ответит на&nbsp;все вопросы и&nbsp;подготовит для вас индивидуальное предложение.
 		</p>
 		<form action="" method="get">
-			<input class="form-input-line" type="text" name="name" id="name" value="Имя" required>
-			<input class="form-input-line" type="text" name="phone" id="phone" value="Телефон" required>
+			<input class="form-input-line" type="text" name="name" id="name" placeholder="Имя" required>
+			<input class="form-input-line" type="text" name="phone" id="phone" placeholder="Телефон" required>
 			<div class="form-input-checkbox">
 				<input type="checkbox" id="scales" name="scales" checked />
 
@@ -171,10 +173,18 @@
 				</label>
 			</div>
 		</form>
-		<button class="_button accent-button" type="submit">
+		<button class="_button accent-button" onclick="formIsSubmitted()" type="submit">
 			<span>Отправить</span>
 			<img src="img/button_white.svg" alt="">
 		</button>
+	</div>
+	<div class="form-window _active hidden">
+		<h2>заказать 
+			<span class="accent">звонок</span>
+		</h2>
+		<p class="lead">
+			Спасибо! Наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время и&nbsp;ответит на&nbsp;все интересующие вопросы.
+		</p>
 	</div>
 </section>
 

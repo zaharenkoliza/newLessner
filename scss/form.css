@@ -5,13 +5,13 @@
   height: 100vh;
   background: white;
   border-radius: 32px 0px 0px 32px;
-  right: -35%;
+  right: -100%;
   display: flex;
   flex-direction: column;
   gap: 48px;
   justify-content: center;
   padding: 0 32px;
-  transition: right 0.5s ease-in-out;
+  transition: right 0.3s ease-in-out;
 }
 .form-window form {
   display: flex;
@@ -28,6 +28,9 @@
   color: #8C8F95;
   line-height: 20.8px;
   padding-left: 24px;
+}
+.form-window .form-input-line:focus {
+  outline: 1px solid #ef9166;
 }
 .form-window .form-input-checkbox input {
   display: none;
@@ -73,8 +76,9 @@
 
 ._active-overlay-close {
   right: 503px;
-  transition: right 0.5s ease-in-out;
+  transition: right 0.3s ease-in-out;
   overflow: hidden;
+  cursor: pointer;
 }
 
 ._active-overlay-background {
@@ -88,6 +92,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes anim {
   0% {
     opacity: 0;
@@ -95,4 +103,33 @@
   100% {
     opacity: 1;
   }
+}
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  .form-window {
+    width: calc(100% - 32px);
+    border-radius: 32px 32px 0px 0px;
+    height: 70vh;
+    right: auto;
+    top: auto;
+    bottom: 100%;
+    padding: 0 16px;
+    gap: 32px;
+  }
+  .form-window .form-input-line {
+    width: auto;
+  }
+  .form-overlay-close {
+    right: 16px;
+    top: auto;
+    bottom: 100%;
+  }
+  ._active-overlay-close {
+    bottom: calc(70vh + 8px);
+  }
+  ._active {
+    bottom: 0;
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
 }/*# sourceMappingURL=form.css.map */

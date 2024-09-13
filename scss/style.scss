@@ -163,6 +163,13 @@ html > body
 					color: #B3B5B9;
 				}
 			}
+			.main-block-p-light{
+				font-size: 22px;
+				line-height: 28px;
+				color: $dark-90;
+				font-weight: 350;
+			}
+			
 			// .main-text-block > div{
 			// 	margin-bottom: 48px;
 			// }
@@ -291,11 +298,6 @@ h4
 	color: $accentColor;
 }
 
-p.regular{
-	font-size: 22px;
-	line-height: 28px;
-}
-
 a{
 	text-decoration: none;
 	color: inherit;
@@ -304,5 +306,134 @@ a{
 a.active-button{
 	color: $dark-60;
 	pointer-events: none;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+	html > body{
+		header{
+			margin: 0 24px;
+		}
+		main{
+			margin: 0 24px;
+		}
+		footer{
+			section{
+				margin: 0 24px;
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 640px){
+	html > body{
+		header{
+			margin: 0 20px;
+		}
+		main{
+			margin: 0 20px;
+		}
+		footer{
+			section{
+				margin: 0 20px;
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 640px) and (min-width: 0px){
+	html > body{
+		header{
+			margin: 0 16px;
+		}
+		main{
+			margin: 0 16px;
+			section{
+				.main-block-p-light{
+					font-size: 18px;
+					line-height: 130%;
+				}
+				.factoids p {
+					font-size: 60px;
+				}
+			}
+		}
+	} 
+	.lead{
+		font-size: 19px;
+		line-height: 25px;
+	}
+	h1{
+		font-size: 32px;
+	}
+	h2{
+		font-size: 28px;
+	}
+	h4{
+		font-size: 20px;
+		line-height: 130%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px){
+	html > body{
+		header{
+			div > nav > ul{
+				display: none;
+			}
+			._button, .header-right > img {
+				display: none;
+			}
+		}
+		main{
+			section{
+				flex-direction: column;
+				.main-block-img {
+					display: block;
+					margin-left: -15px;
+					width: calc(100% + 30px);
+				}
+				.interior-photo{
+					display: none;
+				}
+			}
+			picture > img{
+				width: 100%;
+			}
+			.factoids-conteiner{
+				width: 100%;
+			}
+		}
+		footer{
+			section{
+				margin: 0 20px;
+				flex-direction: column;
+			}
+		}
+		footer{
+			padding: 48px 0;
+			height: fit-content;
+			border-radius: 20px 20px 0px 0px;
+			section{
+				margin: 0 16px;
+				gap: 68px;
+				.footer-info{
+					width: 100%;
+					order: 1;
+				}
+				.footer-contacts{
+					margin: 0;
+					order: 0;
+					width: 80%;
+				}
+				.footer-legal-light{
+					font-size: 14px;
+					line-height: 120%;
+				}
+			}
+		}
+	} 
+	._button{
+		font-size: 14px;
+	}
 }
 
