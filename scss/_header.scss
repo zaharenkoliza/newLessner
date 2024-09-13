@@ -1,0 +1,128 @@
+@import "./variables.scss";
+
+html > body
+{
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+
+		margin: 0 auto 0 auto;
+
+		max-width: 1368px;
+		max-height: 82px;
+		font-size: 20px;
+		margin-bottom: 80px;
+
+		.header-left
+		, .header-right
+		{
+			display: flex;
+			align-items: center;
+		}
+
+		.header-left
+		{
+			margin: 14px 0;
+		}
+
+		.header-right
+		{
+			margin: 8px 0;
+			.gray-button
+			{
+				color: $white;
+
+				background-color: $mainColor;
+				margin-left: 2vw;
+			}
+		}
+
+		.header-contacts
+		{
+			display: flex;
+			justify-content: center;
+
+			margin-left: 1.3vw;
+			flex-direction: column;
+			.header-p-regular
+			{
+				color: $waterColor;
+
+				font-size: 14px;
+				cursor: pointer;
+			}
+		}
+		div > nav
+		{
+			margin-left: 2.7vw;
+			ul
+			{
+				display: flex;
+
+				li
+				{
+					margin-right: 16px;
+				}
+
+				li:hover
+				{
+					color: $waterColor;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+	html > body{
+		header{
+			margin-left: 24px;
+			margin-right: 24px;
+		}
+	} 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 640px){
+	html > body{
+		header{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	} 
+}
+
+@media screen and (max-width: 640px) and (min-width: 0px){
+	html > body{
+		header{
+			margin-left: 16px;
+			margin-right: 16px;
+			margin-bottom: 48px;
+			font-size: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px){
+	html > body{
+		header{
+			div > nav > ul{
+				display: none;
+			}
+			._button, .header-right > img {
+				display: none;
+			}
+			#header-phone-number{
+				cursor: pointer;
+			}
+			#header-phone-number:hover{
+				color: $waterColor;
+			}
+			.header-p-regular{
+				display: none;
+			}
+		}
+	}
+}
+

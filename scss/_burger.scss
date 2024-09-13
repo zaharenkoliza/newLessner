@@ -1,0 +1,35 @@
+@import "./_variables.scss";
+
+.hamburger-menu {
+    display: flex;
+	flex-direction: column;
+	width: 48px;
+	height: 48px;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin-left: 2vw;
+	span{
+		display: block;
+		width: 24px;
+		height: 2px;
+		will-change: transform;
+		background-color: $mainColor;
+		border-radius: 2px;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px){
+	html > body > header {
+		.header-left{
+			img{
+				position: absolute;
+				left: 50%;
+				transform: translate(-60%);
+				width: 20%;
+			}
+		}
+	}
+	
+}

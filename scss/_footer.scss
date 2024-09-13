@@ -1,0 +1,124 @@
+html > body
+{
+	footer{
+		background-color: $mainColor;
+		border-top-left-radius: 48px;
+		border-top-right-radius: 48px;
+		height: 173px;
+		padding: 80px 0 68px 0;
+		section{
+			max-width: 1368px;
+			margin: 0 auto 0 auto;
+			
+			display: flex;
+			height: 100%;
+			.footer-info{
+				width: 50%;
+			}
+			.footer-contacts, .footer-info{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.footer-social{
+				display: flex;
+				gap: 34px;
+			}
+			.footer-contacts{
+				width: 24%;
+				margin-left: 17%;
+			}
+			.regular{
+				color: $white;
+				margin-bottom: 13px;
+				a:hover{
+					color: $dark-40;
+				}
+			}
+			.footer-legal{
+				.footer-legal-light{
+					margin-bottom: 24px;
+				}
+			}
+			.footer-legal-light{
+				color: $dark-25;
+				font-size: 16px;
+				font-weight: 350;
+				line-height: 16px;
+				a:hover{
+					color: $white;
+				}
+			}
+			.footer-social {
+				a{
+					display: flex;
+				}
+				a:hover{
+					circle{
+						fill: $white;
+					}
+					path{
+						fill: $mainColor;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+	html > body{
+		footer{
+			section{
+				margin-left: 24px;
+				margin-right: 24px;
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 640px){
+	html > body{
+		footer{
+			section{
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px){
+	html > body{
+		footer{
+			section{
+				margin: 0 20px;
+				flex-direction: column;
+			}
+		}
+		footer{
+			padding: 48px 0;
+			height: fit-content;
+			border-radius: 20px 20px 0px 0px;
+			section{
+				margin: 0 16px;
+				gap: 68px;
+				.footer-info{
+					width: 100%;
+					order: 1;
+				}
+				.footer-contacts{
+					margin: 0;
+					order: 0;
+					width: 80%;
+				}
+				.footer-legal-light{
+					font-size: 14px;
+					line-height: 120%;
+				}
+			}
+		}
+	}
+}
+

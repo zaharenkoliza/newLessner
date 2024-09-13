@@ -1,0 +1,582 @@
+/* @liveSassCompile */
+@import "../css/circe.css";
+html > body header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  max-width: 1368px;
+  max-height: 82px;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+html > body header .header-left, html > body header .header-right {
+  display: flex;
+  align-items: center;
+}
+html > body header .header-left {
+  margin: 14px 0;
+}
+html > body header .header-right {
+  margin: 8px 0;
+}
+html > body header .header-right .gray-button {
+  color: #FFFFFF;
+  background-color: #40454f;
+  margin-left: 2vw;
+}
+html > body header .header-contacts {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.3vw;
+  flex-direction: column;
+}
+html > body header .header-contacts .header-p-regular {
+  color: #066381;
+  font-size: 14px;
+  cursor: pointer;
+}
+html > body header div > nav {
+  margin-left: 2.7vw;
+}
+html > body header div > nav ul {
+  display: flex;
+}
+html > body header div > nav ul li {
+  margin-right: 16px;
+}
+html > body header div > nav ul li:hover {
+  color: #066381;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  html > body header {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+  html > body header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 0px) {
+  html > body header {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 48px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  html > body header div > nav > ul {
+    display: none;
+  }
+  html > body header ._button, html > body header .header-right > img {
+    display: none;
+  }
+  html > body header #header-phone-number {
+    cursor: pointer;
+  }
+  html > body header #header-phone-number:hover {
+    color: #066381;
+  }
+  html > body header .header-p-regular {
+    display: none;
+  }
+}
+html > body main {
+  max-width: 1368px;
+  margin: 0 auto 0 auto;
+}
+html > body main section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+html > body main section .main-block, html > body main section .main-block-text {
+  display: flex;
+  flex-direction: column;
+}
+html > body main section .main-block {
+  gap: 48px;
+}
+html > body main section .main-block-text {
+  gap: 32px;
+}
+html > body main section .main-p-regular {
+  font-size: 14px;
+}
+html > body main section .main-p-regular span {
+  color: #B3B5B9;
+}
+html > body main section .main-block-p-light {
+  font-size: 22px;
+  line-height: 28px;
+  color: #535861;
+  font-weight: 350;
+}
+html > body main section .main-block-buttons {
+  display: flex;
+  gap: 32px;
+}
+html > body main section:nth-child(1) {
+  display: block;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  html > body main {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+  html > body main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 0px) {
+  html > body main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  html > body main section {
+    margin-bottom: 64px;
+  }
+  html > body main section .main-block {
+    gap: 32px;
+  }
+  html > body main section .main-block-text {
+    gap: 20px;
+  }
+  html > body main section .main-block-p-light {
+    font-size: 18px;
+    line-height: 130%;
+  }
+  html > body main section .factoids p {
+    font-size: 60px;
+  }
+  html > body main section .main-block-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  html > body main section {
+    flex-direction: column;
+  }
+  html > body main section .main-block-img {
+    display: block;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+  }
+  html > body main section .interior-photo {
+    display: none;
+  }
+  html > body main picture > img {
+    width: 100%;
+  }
+  html > body main .factoids-conteiner {
+    width: 100%;
+  }
+}
+html > body footer {
+  background-color: #40454f;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  height: 173px;
+  padding: 80px 0 68px 0;
+}
+html > body footer section {
+  max-width: 1368px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  height: 100%;
+}
+html > body footer section .footer-info {
+  width: 50%;
+}
+html > body footer section .footer-contacts, html > body footer section .footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html > body footer section .footer-social {
+  display: flex;
+  gap: 34px;
+}
+html > body footer section .footer-contacts {
+  width: 24%;
+  margin-left: 17%;
+}
+html > body footer section .regular {
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+html > body footer section .regular a:hover {
+  color: #B3B5B9;
+}
+html > body footer section .footer-legal .footer-legal-light {
+  margin-bottom: 24px;
+}
+html > body footer section .footer-legal-light {
+  color: #CFD0D3;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 16px;
+}
+html > body footer section .footer-legal-light a:hover {
+  color: #FFFFFF;
+}
+html > body footer section .footer-social a {
+  display: flex;
+}
+html > body footer section .footer-social a:hover circle {
+  fill: #FFFFFF;
+}
+html > body footer section .footer-social a:hover path {
+  fill: #40454f;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  html > body footer section {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+  html > body footer section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  html > body footer section {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+  html > body footer {
+    padding: 48px 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 20px 20px 0px 0px;
+  }
+  html > body footer section {
+    margin: 0 16px;
+    gap: 68px;
+  }
+  html > body footer section .footer-info {
+    width: 100%;
+    order: 1;
+  }
+  html > body footer section .footer-contacts {
+    margin: 0;
+    order: 0;
+    width: 80%;
+  }
+  html > body footer section .footer-legal-light {
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: 2vw;
+}
+.hamburger-menu span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  will-change: transform;
+  background-color: #40454f;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  html > body > header .header-left img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%);
+    width: 20%;
+  }
+}
+.form-window {
+  width: 411px;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  background: white;
+  border-radius: 32px 0px 0px 32px;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+  padding: 0 32px;
+  transition: right 0.3s ease-in-out;
+}
+.form-window form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.form-window .form-input-line {
+  background-color: #FBF0EA;
+  width: 411px;
+  height: 48px;
+  border: 1px solid #FBF0EA;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #8C8F95;
+  line-height: 20.8px;
+  padding-left: 24px;
+}
+.form-window .form-input-line:focus {
+  outline: 1px solid #ef9166;
+}
+.form-window .form-input-checkbox input {
+  display: none;
+}
+.form-window .form-input-checkbox label {
+  vertical-align: middle;
+}
+.form-window .form-input-checkbox label:before {
+  content: " ";
+  display: inline-block;
+  margin-right: 11px;
+  position: relative;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: #FBF0EA;
+  border: 1px solid #ef9166;
+  -o-border-image: initial;
+     border-image: initial;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.form-window .form-input-checkbox input:checked + label:before {
+  content: url("../img/form-checkbox.svg");
+  background: #ef9166;
+}
+
+.overlay-background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(64, 69, 79, 0.5);
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.form-overlay-close {
+  position: absolute;
+  top: 32px;
+  right: -500px;
+}
+
+._active-overlay-close {
+  right: 503px;
+  transition: right 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+._active-overlay-background {
+  display: block;
+  animation: 0.5s anim linear;
+  overflow: hidden;
+}
+
+._active {
+  right: 0;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  .form-window {
+    width: calc(100% - 32px);
+    border-radius: 32px 32px 0px 0px;
+    height: 70vh;
+    right: auto;
+    top: auto;
+    bottom: 100%;
+    padding: 0 16px;
+    gap: 32px;
+  }
+  .form-window .form-input-line {
+    width: auto;
+  }
+  .form-overlay-close {
+    right: 16px;
+    top: auto;
+    bottom: 100%;
+  }
+  ._active-overlay-close {
+    bottom: calc(70vh + 8px);
+  }
+  ._active {
+    bottom: 0;
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+p, ul, h1, h2, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.accent {
+  color: #ef9166;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html > body {
+  margin: 0;
+  color: #40454f;
+  overflow-x: hidden;
+  font-family: "Circe";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: "FiveYearsLater";
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 44px;
+  font-family: "FiveYearsLater";
+  line-height: 1;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 26px;
+  font-family: "FiveYearsLater";
+  font-weight: 400;
+  color: #646870;
+  margin: 0;
+  line-height: 36px;
+}
+
+.lead {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+._button {
+  padding: 1rem 40px;
+  border: none;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 26px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  max-height: 48px;
+}
+._button img {
+  margin-left: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+._button span {
+  margin-top: 0.2rem;
+}
+
+._button:hover img {
+  transform: rotate(45deg);
+}
+
+.transparent-button {
+  padding: 0;
+}
+
+.accent-button {
+  background-color: #ef9166;
+  color: #FFFFFF;
+}
+
+._button.button-arrow {
+  padding: 8px 40px;
+}
+
+.factoids {
+  width: 50%;
+}
+.factoids p {
+  margin: 0 0 8px 0;
+  color: #535861;
+  line-height: 147.08px;
+  font-size: 111px;
+}
+
+.factoids-conteiner {
+  display: flex;
+  width: 50%;
+  grid-gap: 20px;
+}
+
+a.active-button {
+  color: #8C8F95;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  ._button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 0px) {
+  .lead {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 130%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,118 @@
+html > body
+{
+	main
+	{
+		max-width: 1368px;
+		margin: 0 auto 0 auto;
+		section
+		{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 88px;
+			.main-block, .main-block-text{
+				display: flex;
+				flex-direction: column;
+			}
+			.main-block{
+				gap: 48px;
+			}
+			.main-block-text{
+				gap: 32px;
+			}
+			.main-p-regular{
+				font-size: 14px;
+				span{
+					color: #B3B5B9;
+				}
+			}
+			.main-block-p-light{
+				font-size: 22px;
+				line-height: 28px;
+				color: $dark-90;
+				font-weight: 350;
+			}
+
+			.main-block-buttons{
+				display: flex;
+				gap: 32px;
+			}
+		}
+		section:nth-child(1){
+			display: block;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1024px){
+	html > body{
+		main{
+			margin-left: 24px;
+			margin-right: 24px;
+		}
+	} 
+}
+
+@media screen and (max-width: 1024px) and (min-width: 640px){
+	html > body{
+		main{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	} 
+}
+
+@media screen and (max-width: 640px) and (min-width: 0px){
+	html > body{
+		main{
+			margin-left: 16px;
+			margin-right: 16px;
+			section{
+				margin-bottom: 64px;
+				.main-block{
+					gap: 32px;
+				}
+				.main-block-text{
+					gap: 20px;
+				}
+				.main-block-p-light{
+					font-size: 18px;
+					line-height: 130%;
+				}
+				.factoids p {
+					font-size: 60px;
+				}
+				.main-block-buttons{
+					flex-direction: column;
+					gap: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px){
+	html > body{
+		main{
+			section{
+				flex-direction: column;
+				.main-block-img {
+					display: block;
+					margin-left: -15px;
+					width: calc(100% + 30px);
+				}
+				.interior-photo{
+					display: none;
+				}
+			}
+			picture > img{
+				width: 100%;
+			}
+			.factoids-conteiner{
+				width: 100%;
+			}
+		}
+	}
+}
+
