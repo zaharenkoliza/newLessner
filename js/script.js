@@ -5,12 +5,22 @@ const overlay_close = document.getElementsByClassName('form-overlay-close')[0];
 const body = document.getElementsByTagName('body')[0];
 const phone_number = document.getElementById('header-phone-number');
 
+const hamburger_menu = document.getElementsByClassName('hamburger-menu')[0];
+const menu = document.getElementsByTagName('ul')[0];
+
 function openFormWindow() {
 	form[0].classList.add('_active');
 	overlay_background.classList.add('_active-overlay-background');
 	overlay_close.classList.add('_active-overlay-close');
 	body.classList.add('overflow-hidden');
 	form[0].classList.remove('hidden');
+}
+
+function openOrCloseMenu() {
+	if (menu.classList.contains('to_show_menu')){
+		menu.classList.remove('to_show_menu');
+	}
+	else menu.classList.add('to_show_menu');
 }
 
 button_phone_call.addEventListener('click', openFormWindow);
@@ -33,8 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		const viewportWidth = window.innerWidth;
 		if (viewportWidth <= 1024) {
 			phone_number.addEventListener('click', openFormWindow);
+
+			hamburger_menu.addEventListener('click', openOrCloseMenu);
 		} else {
 			phone_number.removeEventListener('click', openFormWindow);
+
+			hamburger_menu.removeEventListener('click', openOrCloseMenu);
 		}
 	}
 		

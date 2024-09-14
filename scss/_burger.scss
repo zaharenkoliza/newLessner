@@ -40,6 +40,30 @@
 
 				transform: translateX(-60%);
 			}
+
+			nav ul
+			{
+				position: absolute;
+				top: 75px;
+				left: -100%;
+
+				display: flex;
+
+				padding: 30px 30px;
+
+				background-color: $facadeColor;
+				font-size: 20px;
+				flex-direction: column;
+				border-radius: 20px;
+			}
+			
+			nav
+			{
+				.to_show_menu
+				{
+					left: 20px;
+				}
+			}
 		}
 	}
 }
