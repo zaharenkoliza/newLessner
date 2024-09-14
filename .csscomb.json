@@ -43,6 +43,7 @@
 	"space-before-selector-delimiter": "\n", 
 	"space-between-declarations": "\n",
 	"newline-between-blocks": true,
+	"newline_between_rules": true,
 	"selector-list": {
 		"separator": "\n"
 	}

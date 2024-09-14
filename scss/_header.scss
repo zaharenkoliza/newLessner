@@ -1,135 +1,107 @@
-html > body
-{
-	header
-	{
-		display: flex;
-		justify-content: space-between;
+html > body {
+  header {
+    display: flex;
+    justify-content: space-between;
 
-		margin: 0 auto 80px auto;
+    margin: 0 auto 80px auto;
 
-		max-width: 1368px;
-		max-height: 82px;
-		font-size: 20px;
+    max-width: 1368px;
+    max-height: 82px;
+    font-size: 20px;
 
-		.header-left, 
-		.header-right
-		{
-			display: flex;
-			align-items: center;
-		}
+    .header-left,
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
 
-		.header-left
-		{
-			margin: 14px 0;
-		}
+    .header-left {
+      margin: 14px 0;
+    }
 
-		.header-right
-		{
-			margin: 8px 0;
+    .header-right {
+      margin: 8px 0;
 
-			.gray-button
-			{
-				color: $white;
+      .gray-button {
+        color: $white;
 
-				background-color: $mainColor;
-				margin-left: 2vw;
-			}
-		}
+        background-color: $mainColor;
+        margin-left: 2vw;
+      }
+    }
 
-		.header-contacts
-		{
-			display: flex;
-			justify-content: center;
+    .header-contacts {
+      display: flex;
+      justify-content: center;
 
-			margin-left: 1.3vw;
-			flex-direction: column;
+      margin-left: 1.3vw;
+      flex-direction: column;
 
-			.header-p-regular
-			{
-				color: $waterColor;
+      .header-p-regular {
+        color: $waterColor;
 
-				font-size: 14px;
-				cursor: pointer;
-			}
-		}
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
 
-		nav
-		{
-			margin-left: 2.7vw;
+    nav {
+      margin-left: 2.7vw;
 
-			ul
-			{
-				display: flex;
+      ul {
+        display: flex;
+        gap: 3%;
 
-				li
-				{
-					margin-right: 16px;
-
-					&:hover
-					{
-						color: $waterColor;
-					}
-				}
-			}
-		}
-	}
+        li {
+          &:hover {
+            color: $waterColor;
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width: 1440px) and (min-width: 1024px)
-{
-	html > body header
-	{
-		margin: 0 24px;
-	}
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  html > body header {
+    margin: 0 24px;
+  }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 640px)
-{
-	html > body header
-	{
-		margin: 0 20px;
-	}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+  html > body header {
+    margin: 0 20px;
+  }
 }
 
-@media screen and (max-width: 640px) and (min-width: 0px)
-{
-	html > body header
-	{
-		margin: 0 16px 48px;
+@media screen and (max-width: 640px) and (min-width: 0px) {
+  html > body header {
+    margin: 0 16px 48px;
 
-		font-size: 12px;
-	}
+    font-size: 12px;
+  }
 }
 
-@media screen and (max-width: 1024px)
-{
-	html > body header
-	{
-		nav ul
-		{
-			display: none;
-		}
+@media screen and (max-width: 1024px) {
+  html > body header {
+    nav ul {
+      display: none;
+    }
 
-		._button, 
-		.header-right > img
-		{
-			display: none;
-		}
+    ._button,
+    .header-right > img {
+      display: none;
+    }
 
-		#header-phone-number
-		{
-			cursor: pointer;
+    #header-phone-number {
+      cursor: pointer;
 
-			&:hover
-			{
-				color: $waterColor;
-			}
-		}
+      &:hover {
+        color: $waterColor;
+      }
+    }
 
-		.header-p-regular
-		{
-			display: none;
-		}
-	}
+    .header-p-regular {
+      display: none;
+    }
+  }
 }
-
-

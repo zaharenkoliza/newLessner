@@ -1,5 +1,4 @@
-@import "../css/circe.css";
-@import "./_variables.scss";
+@import "../css/fonts.css";
 
 * {
   padding: 0;
@@ -100,6 +99,10 @@ h4 {
   padding: 0;
 }
 
+.accent{
+	color: $accentColor;
+}
+
 .accent-button {
   color: $white;
 
@@ -116,7 +119,6 @@ h4 {
   p {
     margin: 0 0 8px 0;
     color: $dark-90;
-    line-height: 147.08px;
 
     font-size: 111px;
   }
