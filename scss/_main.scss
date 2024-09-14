@@ -15,9 +15,11 @@ html > body
 			}
 			.main-block{
 				gap: 48px;
+				width: 100%;
 			}
 			.main-block-text{
 				gap: 32px;
+				width: 80%;
 			}
 			.main-p-regular{
 				font-size: 14px;
@@ -29,7 +31,7 @@ html > body
 				font-size: 22px;
 				line-height: 28px;
 				color: $dark-90;
-				font-weight: 350;
+				font-family: 'Circe Light';
 			}
 
 			.main-block-buttons{
@@ -40,7 +42,41 @@ html > body
 		section:nth-child(1){
 			display: block;
 		}
+		section:nth-child(2){
+			gap: 20px;
+		}
 	}
+}
+
+.main-photo {
+    position: relative;
+	width: 100%;
+	height: 100%;
+    display: flex;
+	margin-top: 50px;
+}
+
+.pink-div, .water-div {
+    position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    transform: translateX(-50%);
+	border-radius: 32px;
+}
+
+.water-div {
+    background-color: $grey-blue; /* Light blue background */
+	transform: rotate(-10deg);
+}
+
+.pink-div {
+    background-color: $facadeColor; /* Light pink background */
+	transform: rotate(-5deg);
+}
+
+.interior-photo {
+    z-index: 1; /* Make sure the image is above the divs */
 }
 
 
@@ -104,6 +140,9 @@ html > body
 				}
 				.interior-photo{
 					display: none;
+				}
+				.main-block-text{
+					width: 100%;
 				}
 			}
 			picture > img{

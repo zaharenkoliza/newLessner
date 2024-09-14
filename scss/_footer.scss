@@ -31,6 +31,8 @@ html > body
 			.regular{
 				color: $white;
 				margin-bottom: 13px;
+				font-size: 22px;
+				line-height: 28px;
 				a:hover{
 					color: $dark-40;
 				}
@@ -45,6 +47,7 @@ html > body
 				font-size: 16px;
 				font-weight: 350;
 				line-height: 16px;
+				font-family: 'Circe Light';
 				a:hover{
 					color: $white;
 				}
@@ -117,8 +120,13 @@ html > body
 					font-size: 14px;
 					line-height: 120%;
 				}
+				.regular{
+					margin-bottom: 8px;
+					font-size: 15px;
+					line-height: auto;
 			}
 		}
 	}
 }
 
+}

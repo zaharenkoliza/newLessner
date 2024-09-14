@@ -1,5 +1,6 @@
 @import "./_variables.scss";
 .form-window{
+	z-index: 2;
 	
 	width: 411px;
 	position: absolute;
@@ -69,12 +70,14 @@
 	top: 0px;
 	left: 0px;
 	display: none;
+	z-index: 2;
 }
 
 .form-overlay-close{
 	position: absolute;
 	top: 32px;
 	right: -500px;
+	z-index: 2;
 }
 
 ._active-overlay-close{

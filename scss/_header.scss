@@ -75,27 +75,36 @@ html > body
 }
 
 
-@media screen and (max-width: 1440px) and (min-width: 1024px){
-	html > body{
-		header{
+@media screen and (max-width: 1440px) and (min-width: 1024px)
+{
+	html > body
+	{
+		header
+		{
 			margin-left: 24px;
 			margin-right: 24px;
 		}
-	} 
+	}
 }
 
-@media screen and (max-width: 1024px) and (min-width: 640px){
-	html > body{
-		header{
+@media screen and (max-width: 1024px) and (min-width: 640px)
+{
+	html > body
+	{
+		header
+		{
 			margin-left: 20px;
 			margin-right: 20px;
 		}
-	} 
+	}
 }
 
-@media screen and (max-width: 640px) and (min-width: 0px){
-	html > body{
-		header{
+@media screen and (max-width: 640px) and (min-width: 0px)
+{
+	html > body
+	{
+		header
+		{
 			margin-left: 16px;
 			margin-right: 16px;
 			margin-bottom: 48px;
@@ -104,22 +113,31 @@ html > body
 	}
 }
 
-@media screen and (max-width: 1024px) and (min-width: 0px){
-	html > body{
-		header{
-			div > nav > ul{
+@media screen and (max-width: 1024px) and (min-width: 0px)
+{
+	html > body
+	{
+		header
+		{
+			div > nav > ul
+			{
 				display: none;
 			}
-			._button, .header-right > img {
+			._button
+			, .header-right > img
+			{
 				display: none;
 			}
-			#header-phone-number{
+			#header-phone-number
+			{
 				cursor: pointer;
 			}
-			#header-phone-number:hover{
+			#header-phone-number:hover
+			{
 				color: $waterColor;
 			}
-			.header-p-regular{
+			.header-p-regular
+			{
 				display: none;
 			}
 		}
