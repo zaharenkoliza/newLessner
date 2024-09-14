@@ -1,16 +1,19 @@
-@font-face {
-    font-family: 'Circe Light';
-    src: url('../fonts/circe_light.woff2') format('woff2'),
-         url('../fonts/circe_light.woff') format('woff');
+@font-face
+{
+	font-family: 'Circe Light';
+	src: url('../fonts/circe_light.woff2') format('woff2'),
+	url('../fonts/circe_light.woff') format('woff');
 }
 
-@font-face {
-    font-family: 'Circe';
-    src: url('../fonts/circe.woff2') format('woff2'),
-         url('../fonts/circe.woff') format('woff');
+@font-face
+{
+	font-family: 'Circe';
+	src: url('../fonts/circe.woff2') format('woff2'),
+	url('../fonts/circe.woff') format('woff');
 }
 
-@font-face {
-    font-family: 'FiveYearsLater';
-    src: url('../fonts/Five_Years_Later.otf') format('opentype');
+@font-face
+{
+	font-family: 'FiveYearsLater';
+	src: url('../fonts/Five_Years_Later.otf') format('opentype');
 }

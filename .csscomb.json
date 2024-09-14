@@ -1,46 +1,49 @@
 {
-   "remove-empty-rulesets": true,
-   "always-semicolon": true,
-   "color-case": "lower",
-   "block-indent": "\t",
-			"newline-between-selectors": true,
-			"max-line-length": 120,
-			"block-closing-brace-newline-before": "\n",
-   "block-opening-brace-newline-before": true,
-   "strip-spaces": false,
-   "sort-order": [
-       [
-           "position",
-           "top",
-           "right",
-           "bottom",
-           "left",
-           "z-index"
-       ],
-       [
-           "display",
-           "visibility",
-           "flex",
-           "grid",
-           "align-items",
-           "justify-content"
-       ],
-       [
-           "width",
-           "height",
-           "padding",
-           "margin",
-           "border",
-           "background",
-           "color",
-           "font",
-           "text-align",
-           "line-height"
-       ]
-   ],
-   "space-before-opening-brace": "\n",  
-   "space-before-closing-brace": "\n",  
-   "space-before-selector-delimiter": "\n", 
-   "space-between-declarations": "\n",
-   "newline-between-blocks": true 
+	"remove-empty-rulesets": true,
+	"always-semicolon": true,
+	"color-case": "lower",
+	"block-indent": "\t",
+	"newline-between-selectors": true,
+	"max-line-length": 120,
+	"block-closing-brace-newline-before": "\n",
+	"block-opening-brace-newline-before": true,
+	"strip-spaces": false,
+	"sort-order": [
+		[
+			"position",
+			"top",
+			"right",
+			"bottom",
+			"left",
+			"z-index"
+		],
+		[
+			"display",
+			"visibility",
+			"flex",
+			"grid",
+			"align-items",
+			"justify-content"
+		],
+		[
+			"width",
+			"height",
+			"padding",
+			"margin",
+			"border",
+			"background",
+			"color",
+			"font",
+			"text-align",
+			"line-height"
+		]
+	],
+	"space-before-opening-brace": "\n",  
+	"space-before-closing-brace": "\n",  
+	"space-before-selector-delimiter": "\n", 
+	"space-between-declarations": "\n",
+	"newline-between-blocks": true,
+	"selector-list": {
+		"separator": "\n"
+	}
 }

@@ -1,5 +1,3 @@
-@import "./variables.scss";
-
 html > body
 {
 	header
@@ -7,15 +5,14 @@ html > body
 		display: flex;
 		justify-content: space-between;
 
-		margin: 0 auto 0 auto;
+		margin: 0 auto 80px auto;
 
 		max-width: 1368px;
 		max-height: 82px;
 		font-size: 20px;
-		margin-bottom: 80px;
 
-		.header-left
-		, .header-right
+		.header-left, 
+		.header-right
 		{
 			display: flex;
 			align-items: center;
@@ -29,6 +26,7 @@ html > body
 		.header-right
 		{
 			margin: 8px 0;
+
 			.gray-button
 			{
 				color: $white;
@@ -45,6 +43,7 @@ html > body
 
 			margin-left: 1.3vw;
 			flex-direction: column;
+
 			.header-p-regular
 			{
 				color: $waterColor;
@@ -53,9 +52,11 @@ html > body
 				cursor: pointer;
 			}
 		}
-		div > nav
+
+		nav
 		{
 			margin-left: 2.7vw;
+
 			ul
 			{
 				display: flex;
@@ -63,84 +64,72 @@ html > body
 				li
 				{
 					margin-right: 16px;
-				}
 
-				li:hover
-				{
-					color: $waterColor;
+					&:hover
+					{
+						color: $waterColor;
+					}
 				}
 			}
 		}
 	}
 }
-
-
 @media screen and (max-width: 1440px) and (min-width: 1024px)
 {
-	html > body
+	html > body header
 	{
-		header
-		{
-			margin-left: 24px;
-			margin-right: 24px;
-		}
+		margin: 0 24px;
 	}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 640px)
 {
-	html > body
+	html > body header
 	{
-		header
-		{
-			margin-left: 20px;
-			margin-right: 20px;
-		}
+		margin: 0 20px;
 	}
 }
 
 @media screen and (max-width: 640px) and (min-width: 0px)
 {
-	html > body
+	html > body header
 	{
-		header
+		margin: 0 16px 48px;
+
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	html > body header
+	{
+		nav ul
 		{
-			margin-left: 16px;
-			margin-right: 16px;
-			margin-bottom: 48px;
-			font-size: 12px;
+			display: none;
+		}
+
+		._button, 
+		.header-right > img
+		{
+			display: none;
+		}
+
+		#header-phone-number
+		{
+			cursor: pointer;
+
+			&:hover
+			{
+				color: $waterColor;
+			}
+		}
+
+		.header-p-regular
+		{
+			display: none;
 		}
 	}
 }
 
-@media screen and (max-width: 1024px) and (min-width: 0px)
-{
-	html > body
-	{
-		header
-		{
-			div > nav > ul
-			{
-				display: none;
-			}
-			._button
-			, .header-right > img
-			{
-				display: none;
-			}
-			#header-phone-number
-			{
-				cursor: pointer;
-			}
-			#header-phone-number:hover
-			{
-				color: $waterColor;
-			}
-			.header-p-regular
-			{
-				display: none;
-			}
-		}
-	}
-}
 

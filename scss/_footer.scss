@@ -1,132 +1,164 @@
 html > body
 {
-	footer{
+	footer
+	{
+		height: 173px;
+		padding: 80px 0 68px 0;
+
 		background-color: $mainColor;
 		border-top-left-radius: 48px;
 		border-top-right-radius: 48px;
-		height: 173px;
-		padding: 80px 0 68px 0;
-		section{
-			max-width: 1368px;
-			margin: 0 auto 0 auto;
-			
+
+		section
+		{
 			display: flex;
+
 			height: 100%;
-			.footer-info{
-				width: 50%;
-			}
-			.footer-contacts, .footer-info{
+			margin: 0 auto;
+
+			max-width: 1368px;
+
+			.footer-info
+			{
 				display: flex;
-				flex-direction: column;
 				justify-content: space-between;
-			}
-			.footer-social{
-				display: flex;
-				gap: 34px;
-			}
-			.footer-contacts{
-				width: 24%;
-				margin-left: 17%;
-			}
-			.regular{
-				color: $white;
-				margin-bottom: 13px;
-				font-size: 22px;
-				line-height: 28px;
-				a:hover{
-					color: $dark-40;
-				}
-			}
-			.footer-legal{
-				.footer-legal-light{
+
+				width: 50%;
+
+				flex-direction: column;
+
+				.footer-legal-light
+				{
+					color: $dark-25;
+					line-height: 16px;
+
+					font-size: 16px;
+					font-weight: 350;
+					font-family: 'Circe Light';
 					margin-bottom: 24px;
-				}
-			}
-			.footer-legal-light{
-				color: $dark-25;
-				font-size: 16px;
-				font-weight: 350;
-				line-height: 16px;
-				font-family: 'Circe Light';
-				a:hover{
-					color: $white;
-				}
-			}
-			.footer-social {
-				a{
-					display: flex;
-				}
-				a:hover{
-					circle{
-						fill: $white;
+
+					a:hover
+					{
+						color: $white;
 					}
-					path{
-						fill: $mainColor;
+				}
+			}
+
+			.footer-contacts
+			{
+				display: flex;
+				justify-content: space-between;
+
+				width: 24%;
+
+				margin-left: 17%;
+				flex-direction: column;
+
+				.footer-social
+				{
+					display: flex;
+
+					gap: 34px;
+
+					a
+					{
+						display: flex;
+
+						&:hover
+						{
+							circle
+							{
+								fill: $white;
+							}
+							path
+							{
+								fill: $mainColor;
+							}
+						}
+					}
+				}
+
+				.regular
+				{
+					color: $white;
+					line-height: 28px;
+
+					margin-bottom: 13px;
+					font-size: 22px;
+
+					a:hover
+					{
+						color: $dark-40;
 					}
 				}
 			}
 		}
 	}
 }
-
-
-@media screen and (max-width: 1440px) and (min-width: 1024px){
-	html > body{
-		footer{
-			section{
-				margin-left: 24px;
-				margin-right: 24px;
-			}
-		}
-	} 
+@media screen and (max-width: 1440px) and (min-width: 1024px)
+{
+	html > body footer section
+	{
+		margin: 0 24px;
+	}
 }
-
-@media screen and (max-width: 1024px) and (min-width: 640px){
-	html > body{
-		footer{
-			section{
-				margin-left: 20px;
-				margin-right: 20px;
-			}
-		}
-	} 
+@media screen and (max-width: 1024px) and (min-width: 640px)
+{
+	html > body footer section
+	{
+		margin: 0 20px;
+	}
 }
+@media screen and (max-width: 640px)
+{
+	html > body footer section
+	{
+		margin: 0 16px;
+	}
+}
+@media screen and (max-width: 1024px)
+{
+	html > body footer
+	{
+		height: fit-content;
+		padding: 48px 0;
 
-@media screen and (max-width: 1024px) and (min-width: 0px){
-	html > body{
-		footer{
-			section{
-				margin: 0 20px;
-				flex-direction: column;
-			}
-		}
-		footer{
-			padding: 48px 0;
-			height: fit-content;
-			border-radius: 20px 20px 0px 0px;
-			section{
-				margin: 0 16px;
-				gap: 68px;
-				.footer-info{
-					width: 100%;
-					order: 1;
-				}
-				.footer-contacts{
-					margin: 0;
-					order: 0;
-					width: 80%;
-				}
-				.footer-legal-light{
-					font-size: 14px;
+		border-radius: 20px 20px 0 0;
+
+		section
+		{
+			flex-direction: column;
+			gap: 68px;
+
+			.footer-info
+			{
+				width: 100%;
+
+				order: 1;
+
+				.footer-legal-light
+				{
 					line-height: 120%;
+
+					font-size: 14px;
 				}
-				.regular{
+			}
+
+			.footer-contacts
+			{
+				width: 80%;
+				margin: 0;
+
+				order: 0;
+
+				.regular
+				{
+					line-height: auto;
+
 					margin-bottom: 8px;
 					font-size: 15px;
-					line-height: auto;
+				}
 			}
 		}
 	}
-}
-
 }

@@ -1,144 +1,189 @@
 @import "./_variables.scss";
-.form-window{
-	z-index: 2;
-	
-	width: 411px;
+
+.form-window
+{
 	position: absolute;
-	top: 0px;
-	height: 100vh;
-	background: white;
-	border-radius: 32px 0px 0px 32px;
+	top: 0;
 	right: -100%;
+	z-index: 2;
+
 	display: flex;
+	justify-content: center;
+
+	width: 411px;
+	height: 100vh;
+	padding: 0 32px;
+	background: white;
+
+	border-radius: 32px 0 0 32px;
 	flex-direction: column;
 	gap: 48px;
-	justify-content: center;
-	padding: 0 32px;
-	
 	transition: right 0.3s ease-in-out;
-	form{
+
+	form
+	{
 		display: flex;
+
 		flex-direction: column;
 		gap: 32px;
 	}
-	.form-input-line{
-		background-color: $facadeColor;
-		width: 411px;
+
+	.form-input-line
+	{
+		width: 100%;
 		height: 48px;
-		border: 1px solid $facadeColor;border-radius: 12px;
-		font-size: 16px;
+		border: 1px solid $facadeColor;
 		color: $dark-60;
 		line-height: 20.8px;
+
+		background-color: $facadeColor;
+		border-radius: 12px;
+		font-size: 16px;
 		padding-left: 24px;
+
+		&:focus
+		{
+			outline: 1px solid $accentColor;
+		}
 	}
-	.form-input-line:focus{
-		outline: 1px solid $accentColor;
-	}
-	.form-input-checkbox{
-		input{
+
+	.form-input-checkbox
+	{
+		input
+		{
 			display: none;
 		}
-		label {
+
+		label
+		{
 			vertical-align: middle;
+
+			&:before
+			{
+				display: inline-block;
+
+				width: 20px;
+				height: 20px;
+				border: 1px solid $accentColor;
+				background: $facadeColor;
+				text-align: center;
+
+				content: " ";
+				margin-right: 11px;
+				border-radius: 5px;
+				vertical-align: middle;
+			}
 		}
-		label:before{
-			content: " ";
-			display: inline-block;
-			margin-right: 11px;
-			position: relative;
-			text-align: center;
-			width: 20px;
-			height: 20px;
-			background: $facadeColor;
-			border: 1px solid $accentColor;
-			border-image: initial;
-			vertical-align: middle;
-			border-radius: 5px;
-		}
-		input:checked + label:before {
-			content: url('../img/form-checkbox.svg');
+
+		input:checked + label:before
+		{
 			background: $accentColor;
+
+			content: url('../img/form-checkbox.svg');
 		}
 	}
 }
 
-.overlay-background{
+.overlay-background
+{
 	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	display: none;
+
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(#40454FB0, 0.5);
-	top: 0px;
-	left: 0px;
-	display: none;
-	z-index: 2;
+
+	background-color: rgba(#40454f, 0.5);
 }
 
-.form-overlay-close{
+.form-overlay-close
+{
 	position: absolute;
 	top: 32px;
 	right: -500px;
 	z-index: 2;
 }
 
-._active-overlay-close{
+._active-overlay-close
+{
 	right: 503px;
+
 	transition: right 0.3s ease-in-out;
-	overflow: hidden;
 	cursor: pointer;
 }
 
-._active-overlay-background{
+._active-overlay-background
+{
 	display: block;
-	animation: 0.5s anim linear;
-	overflow: hidden;
+
+	animation: fade-in 0.5s linear;
 }
 
-._active{
+._active
+{
 	right: 0;
-	overflow: hidden;
 }
 
-.hidden{
+.hidden
+{
 	display: none;
 }
 
-@keyframes anim {
-	0% {
-	  opacity: 0;
+.overflow-hidden
+{
+	overflow: hidden;
+}
+
+@keyframes fade-in
+{
+	0%
+	{
+		opacity: 0;
 	}
-	100% {
-	  opacity: 1;
-  
+	100%
+	{
+		opacity: 1;
 	}
 }
 
-@media screen and (max-width: 1024px) and (min-width: 0px){
-	.form-window{
-		width: calc(100% - 32px);
-		border-radius: 32px 32px 0px 0px;
-		height: 70vh;
+@media screen and (max-width: 1024px)
+{
+	.form-window
+	{
+		top: auto;
 		right: auto;
-		top:auto;
 		bottom: 100%;
+
+		width: calc(100% - 32px);
+		height: 70vh;
 		padding: 0 16px;
+
+		border-radius: 32px 32px 0 0;
 		gap: 32px;
-		.form-input-line{
-			width: auto;
+
+		.form-input-line
+		{
+			width: 100%;
 		}
 	}
-	.form-overlay-close{
+
+	.form-overlay-close
+	{
+		top: auto;
 		right: 16px;
-		top:auto;
 		bottom: 100%;
 	}
-	._active-overlay-close{
+
+	._active-overlay-close
+	{
 		bottom: calc(70vh + 8px);
 	}
-	._active{
+
+	._active
+	{
 		bottom: 0;
 	}
-}
-
-.overflow-hidden{
-	overflow: hidden;
 }
