@@ -75,7 +75,7 @@ html > body header nav ul li:hover
 {
 	html > body header
 	{
-		margin: 0 24px;
+		margin: 0 24px 80px;
 	}
 }
 
@@ -83,7 +83,7 @@ html > body header nav ul li:hover
 {
 	html > body header
 	{
-		margin: 0 20px;
+		margin: 0 20px 48px;
 	}
 }
 
@@ -454,7 +454,6 @@ html > body footer section .footer-contacts .regular a:hover
 {
 	html > body footer
 	{
-		height: -moz-fit-content;
 		height: fit-content;
 		padding: 48px 0;
 
@@ -531,8 +530,7 @@ html > body footer section .footer-contacts .regular a:hover
 	{
 		position: absolute;
 		left: 50%;
-
-		width: 20%;
+		top: 2%;
 
 		transform: translateX(-60%);
 	}
@@ -718,22 +716,26 @@ html > body footer section .footer-contacts .regular a:hover
 		padding: 0 16px;
 
 		border-radius: 32px 32px 0 0;
-		gap: 32px;
+		gap: 6%;
 	}
+
 	.form-window .form-input-line
 	{
 		width: 100%;
 	}
+
 	.form-overlay-close
 	{
 		top: auto;
 		right: 16px;
 		bottom: 100%;
 	}
+
 	._active-overlay-close
 	{
 		bottom: calc(70vh + 8px);
 	}
+
 	._active
 	{
 		bottom: 0;
@@ -775,7 +777,7 @@ html > body
 	color: #40454f;
 
 	overflow-x: hidden;
-	font-family: "Circe", sans-serif;
+	font-family: "Circe";
 	font-weight: 400;
 }
 
@@ -785,7 +787,7 @@ h4
 {
 	line-height: 1;
 
-	font-family: "FiveYearsLater", serif;
+	font-family: "FiveYearsLater";
 	font-weight: 400;
 }
 

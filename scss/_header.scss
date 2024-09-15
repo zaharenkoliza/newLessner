@@ -63,13 +63,13 @@ html > body {
 }
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
   html > body header {
-    margin: 0 24px;
+    margin: 0 24px 80px;
   }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 640px) {
   html > body header {
-    margin: 0 20px;
+    margin: 0 20px 48px;
   }
 }
 
