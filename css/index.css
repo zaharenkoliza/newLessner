@@ -42,7 +42,7 @@ html > body header .header-contacts
 	display: flex;
 	justify-content: center;
 
-	margin-left: 1.3vw;
+	margin-left: 20px;
 	flex-direction: column;
 }
 
@@ -52,11 +52,12 @@ html > body header .header-contacts .header-p-regular
 
 	font-size: 14px;
 	cursor: pointer;
+	transform: translate(0, -5px);
 }
 
 html > body header nav
 {
-	margin-left: 2.7vw;
+	margin-left: 40px;
 }
 
 html > body header nav ul
@@ -97,7 +98,7 @@ html > body header nav ul li:hover
 	}
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1240px)
 {
 	html > body header ._button,
 	html > body header .header-right > img
@@ -524,7 +525,7 @@ html > body footer section .footer-contacts .regular a:hover
 	transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1240px)
 {
 	html > body > header .header-left img
 	{

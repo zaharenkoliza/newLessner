@@ -34,7 +34,7 @@ html > body {
       display: flex;
       justify-content: center;
 
-      margin-left: 1.3vw;
+      margin-left: 20px;
       flex-direction: column;
 
       .header-p-regular {
@@ -42,11 +42,12 @@ html > body {
 
         font-size: 14px;
         cursor: pointer;
+		transform: translate(0, -5px);
       }
     }
 
     nav {
-      margin-left: 2.7vw;
+      margin-left: 40px;
 
       ul {
         display: flex;
@@ -81,7 +82,7 @@ html > body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
   html > body header {
     ._button,
     .header-right > img {
