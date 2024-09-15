@@ -1,167 +1,196 @@
 @import "../css/fonts.css";
 
-* {
-  padding: 0;
-  margin: 0;
+*
+{
+	padding: 0;
+	margin: 0;
 
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 p,
 ul,
 h1,
 h2,
-h4 {
-  padding: 0;
-  margin: 0;
+h4
+{
+	padding: 0;
+	margin: 0;
 }
 
-li {
-  list-style-type: none;
+li
+{
+	list-style-type: none;
 }
 
-a {
-  color: inherit;
+a
+{
+	color: inherit;
 
-  text-decoration: none;
+	text-decoration: none;
 }
 
-html > body {
-  margin: 0;
-  color: $mainColor;
+html > body
+{
+	margin: 0;
+	color: $mainColor;
 
-  overflow-x: hidden;
-  font-family: "Circe";
-  font-weight: 400;
+	overflow-x: hidden;
+	font-family: "Circe";
+	font-weight: 400;
 }
 
 h1,
 h2,
-h4 {
-  line-height: 1;
+h4
+{
+	line-height: 1;
 
-  font-family: "FiveYearsLater";
-  font-weight: 400;
+	font-family: "FiveYearsLater";
+	font-weight: 400;
 }
 
-h1 {
-  font-size: 64px;
-  margin-top: 10px;
+h1
+{
+	font-size: 64px;
+	margin-top: 10px;
 }
 
-h2 {
-  font-size: 44px;
-  margin-top: 0;
+h2
+{
+	font-size: 44px;
+	margin-top: 0;
 }
 
-h4 {
-  color: $dark-80;
-  line-height: 36px;
+h4
+{
+	color: $dark-80;
+	line-height: 36px;
 
-  font-size: 26px;
+	font-size: 26px;
 }
 
-.lead {
-  line-height: 32px;
+.lead
+{
+	line-height: 32px;
 
-  font-size: 24px;
+	font-size: 24px;
 }
 
-._button {
-  display: inline-flex;
-  align-items: center;
+._button
+{
+	display: inline-flex;
+	align-items: center;
 
-  width: max-content;
-  padding: 1rem 40px;
-  border: none;
-  line-height: 16px;
+	width: max-content;
+	padding: 1rem 40px;
+	border: none;
+	line-height: 16px;
 
-  font-size: 16px;
-  border-radius: 26px;
-  text-transform: uppercase;
-  max-height: 48px;
+	font-size: 16px;
+	border-radius: 26px;
+	text-transform: uppercase;
+	max-height: 48px;
 
-  img {
-    margin-left: 16px;
-    transition: transform 0.2s ease-in-out;
-  }
+	img
+	{
+		margin-left: 16px;
+		transition: transform 0.2s ease-in-out;
+	}
 
-  span {
-    margin-top: 0.2rem;
-  }
+	span
+	{
+		margin-top: 0.2rem;
+	}
 
-  &:hover img {
-    transform: rotate(45deg);
-  }
+	&:hover img
+	{
+		transform: rotate(45deg);
+	}
 }
 
-.transparent-button {
-  padding: 0;
+.transparent-button
+{
+	padding: 0;
 }
 
-.accent{
+.accent
+{
 	color: $accentColor;
 }
 
-.accent-button {
-  color: $white;
+.accent-button
+{
+	color: $white;
 
-  background-color: $accentColor;
+	background-color: $accentColor;
 }
 
-._button.button-arrow {
-  padding: 8px 40px;
+._button.button-arrow
+{
+	padding: 8px 40px;
 }
 
-.factoids {
-  width: 50%;
+.factoids
+{
+	width: 50%;
 
-  p {
-    margin: 0 0 8px 0;
-    color: $dark-90;
+	p
+	{
+		margin: 0 0 8px 0;
+		color: $dark-90;
 
-    font-size: 111px;
-  }
+		font-size: 111px;
+	}
 }
 
-.factoids-conteiner {
-  display: flex;
+.factoids-conteiner
+{
+	display: flex;
 
-  width: 50%;
+	width: 50%;
 
-  gap: 20px;
+	gap: 20px;
 }
 
-a.active-button {
-  color: $dark-60;
+a.active-button
+{
+	color: $dark-60;
 
-  pointer-events: none;
+	pointer-events: none;
 }
 
-@media (max-width: 1024px) {
-  ._button {
-    font-size: 14px;
-  }
+@media (max-width: 1024px)
+{
+	._button
+	{
+		font-size: 14px;
+	}
 }
 
-@media (max-width: 640px) {
-  .lead {
-    line-height: 25px;
+@media (max-width: 640px)
+{
+	.lead
+	{
+		line-height: 25px;
 
-    font-size: 19px;
-  }
+		font-size: 19px;
+	}
 
-  h1 {
-    font-size: 32px;
-  }
+	h1
+	{
+		font-size: 32px;
+	}
 
-  h2 {
-    font-size: 28px;
-  }
+	h2
+	{
+		font-size: 28px;
+	}
 
-  h4 {
-    line-height: 130%;
+	h4
+	{
+		line-height: 130%;
 
-    font-size: 20px;
-  }
+		font-size: 20px;
+	}
 }
